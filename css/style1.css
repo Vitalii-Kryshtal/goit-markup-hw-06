@@ -579,6 +579,71 @@
     height: 40px;
 }
 
+/* не завершена 3 секція */
 
+
+.portfolio-list {
+    background-color: #f4f4fd;
+    padding: 96px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-list-blocks {
+    list-style-type: none;
+    display: flex;
+    width: 1128px;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 0 auto;
+    padding-left: 0;
+    row-gap: 48px;
+}
+
+.portfolio-content {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-list {
+        padding: 0 28px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .portfolio-list {
+    padding: 120px 0;
+    }
+}
+
+
+
+
+
+.portfolio-content:hover,
+.portfolio-content:focus {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio-list-blocks {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .portfolio-list-blocks{
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+}
+.portfolio-content {
+    padding-bottom: 32px;
+    padding-top: 32px;
+    text-align: center;
+}
 
 
