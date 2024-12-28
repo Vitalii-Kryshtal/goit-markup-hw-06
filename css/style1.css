@@ -759,7 +759,12 @@ a.corrent {
     padding-bottom: 96px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .team-list .container {
+        max-width: 584px;
+    }
 
+}
  @media screen and (min-width: 1158px) {
  .portfolio-list {
      padding-top: 120px;
